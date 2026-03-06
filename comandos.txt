@@ -1,0 +1,20 @@
+# instarlar django
+
+pip install django==5.2.12 
+
+#rodar projeto
+
+python manage.py runserver
+
+#conferir models e prepara o sql pro banco
+python manage.py makemigrations
+
+#usar sql criado pra efeticamente atualizar o banco
+python manage.py migrate
+
+#criar um superusuario no banco 
+python manage.py createsuperuser
+
+
+#TAREFAS
+criar a pagina SOBRE e PAGINA INICIAL e usar o do gemini como backup

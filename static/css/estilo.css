@@ -1,3 +1,37 @@
-* {
-    font-family: 'Courier New', Courier, monospace;
+:root {
+    /* Paleta Customizada - Azul Petróleo e Cores Modernas */
+    --bs-primary: #006064;      /* Azul Petróleo Principal */
+    --bs-primary-rgb: 0, 96, 100;
+    --bs-success: #26a69a;      /* Verde Água */
+    --bs-info: #4dd0e1;         /* Ciano Suave */
+    --bs-warning: #ffd54f;      /* Amarelo Pastel */
+    --bs-danger: #ef5350;       /* Coral/Vermelho Moderno */
+    --bs-body-bg: #f8f9fa;
+    --bs-body-font-family: 'Inter', sans-serif;
+    }
+
+/* Ajuste para o rodapé ficar sempre embaixo */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+        
+    main {
+    flex: 1 0 auto;
+    padding-top: 80px; /* Espaço para a navbar fixa */
+    }
+
+    .navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+.btn-primary { background-color: var(--bs-primary); border: none; }
+.btn-primary:hover { background-color: #004d40; }
+        
+footer {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.05);
 }
