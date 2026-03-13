@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 
     #ativar meus apps
     #pasta  arquivo   classe
-    'website.apps.WebsiteConfig'
+    'website.apps.WebsiteConfig',
+    'rpg.apps.RpgConfig'
 ]
 
 MIDDLEWARE = [

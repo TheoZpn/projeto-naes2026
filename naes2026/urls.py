@@ -19,6 +19,8 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     #importar urls dos apps
     path("", include("website.urls")),
+    path("rpg/", include("rpg.urls"))
 ]
