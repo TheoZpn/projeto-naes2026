@@ -1,7 +1,7 @@
 from django.urls import path
-#from .views import IndexView, ContatoView, SobreView
+#from .views import CampusCreate, ModalidadeCreate (exemplo)
 
 urlpatterns = [
-    #path("", IndexView.as_view(), name="index"),
+    #path("cadastrar/campus/", CampusCreate.as_view(), name="campus-create"),
     
 ]
