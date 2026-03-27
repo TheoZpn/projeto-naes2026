@@ -25,3 +25,15 @@ class CampusUpdate(UdateView):
         'botao': "atualizar campus"
     }
 '''
+
+'''
+class CampusDelete(DeleteView):
+    model = Campus
+    fields = ['nome']
+    template_name = 'campeonato/form.html'
+    success_url = reverse_lazy('index')
+    extra_content ={
+        'titulo': "deletar um campus"
+        'botao': "deletar campus"
+    }
+'''

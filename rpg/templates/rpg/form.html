@@ -17,9 +17,22 @@
 
         {{ form|crispy}}
 
-        <button type="submit" class="btn btn-primary">
-            {{ botao }}
-        </button>
+        {% if botao == "Sim, exlcuir!" %}
+
+            <h4>Deseja exlucir esse item?<h4/>
+            
+            <div class ="alert alert-danger" role="alert">
+                {{object}}
+            </div>
+
+
+            <button type="submit" class="btn btn-danger">
+                {{ botao }}
+            </button>
+        {% else %}
+            <button type="submit" class="btn btn-primary">
+                {{ botao }}
+            </button>
         
     </form>
 
