@@ -87,6 +87,7 @@ WSGI_APPLICATION = 'naes2026.wsgi.application'
 #     }
 # }
 
+#MEU BANCO DE DADOS---------------------------------
 DATABASE_URL='postgresql://neondb_owner:npg_uTGDe40FxUqw@ep-young-cell-acgr8hes-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
 
 tmpPostgres = urlparse(DATABASE_URL)
@@ -144,3 +145,6 @@ STATICFILES_DIRS = [ BASE_DIR / "static" ]
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#CRISPY.ALLOWED  
