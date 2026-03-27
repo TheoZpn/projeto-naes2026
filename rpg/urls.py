@@ -3,6 +3,6 @@ from django.urls import path
 
 urlpatterns = [
     #path("cadastrar/campus/", CampusCreate.as_view(), name="campus-create"),
-    #path("atualizar/campus/", CampusUpdate.as_view(), name="campus-update"),
+    #path("atualizar/campus/<int:pk>/", CampusUpdate.as_view(), name="campus-update"),
     
 ]
