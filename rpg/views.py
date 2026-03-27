@@ -1,4 +1,5 @@
-from django.views.generic import CreateView, UpdateView, DeleteView, ListView, DetailView
+from django.views.generic import CreateView, UpdateView, DeleteView, DetailView
+from django.views.generic.list import ListView
 
 #busca a rota da url pelo name dela
 from django.views import reverse_lazy
@@ -34,6 +35,18 @@ class CampusDelete(DeleteView):
     success_url = reverse_lazy('index')
     extra_content ={
         'titulo': "deletar um campus"
-        'botao': "deletar campus"
+        'botao': "sim, excluir"
     }
+'''
+
+'''
+class CampusList(ListView):
+    model = Campus
+    template_name = 'campeonato/list.html'
+'''
+
+'''
+class CampusDetail(DetailView):
+    model = Campus
+    template_name = 'campeonato/detail.html'
 '''
